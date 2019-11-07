@@ -1,5 +1,5 @@
 {% set name = "cfn-flip" %}
-{% set version = "1.2.1" %}
+{% set version = "1.2.2" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/awslabs/aws-cfn-template-flip/archive/{{ version }}.tar.gz
-  sha256: 2ea2d115a69416acd577c2d97c7731d1a8fc313544831106e756ef22995c73a1
+  sha256: c2780f27b74bd14222d19dd82b2b60ca6451c91e5a5ea963758b085bf9dde9ea
 
 build:
   number: 0
