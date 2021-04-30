@@ -10,7 +10,7 @@ source:
   sha256: e4ef9d8b933913d6c63408a6ca5a4b60c313b1b971e1562cd6d14ea39399754f
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - cfn-flip=cfn_flip.main:main
@@ -50,6 +50,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - mxr-conda
     - rluria14
     - adbeda
     - agcopenhaver
