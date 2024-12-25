@@ -10,7 +10,7 @@ source:
   sha256: 80ba7631f7689e1116879fbf073c56f1848fa73b344fb23e27d0e393237b433d
 
 build:
-  number: 1
+  number: 2
   noarch: python
   entry_points:
     - cfn-flip=cfn_flip.main:main
@@ -19,11 +19,11 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
     - six
   run:
     - click
-    - python >=3.6
+    - python >={{ python_min }}
     - pyyaml >=4.1
     - six
 
@@ -38,6 +38,7 @@ test:
     - pytest >=4.3.0
     - pytest-cov
     - pytest-runner
+    - python {{ python_min }}
 
 about:
   home: https://github.com/awslabs/aws-cfn-template-flip
